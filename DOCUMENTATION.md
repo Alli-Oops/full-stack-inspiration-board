@@ -26,15 +26,15 @@ FLASK framework: K Team (Katrina K and Kate M)
 
                                                                         (WAVE 2)
 - Creating conventional RESTful CRUD routes for a model
-    GET /boards
-    POST /boards
-    PUT /boards/<board_id>
-    GET /boards/<board_id>
-    DELETE /boards/<board_id>
+    - GET /boards
+    - POST /boards
+    - PUT /boards/<board_id>
+    - GET /boards/<board_id>
+    - DELETE /boards/<board_id>
 
-    POST /boards/<board_id>/cards
-    DELETE /boards/<board_id>/cards/<card_id>
-    PUT boards/<board_id>/cards/<card_id>
+    - POST /boards/<board_id>/cards
+    - DELETE /boards/<board_id>/cards/<card_id>
+    - PUT boards/<board_id>/cards/<card_id>
 
     Backend User Stories:
     -  User can create a new board with a name (POST)
