@@ -1,31 +1,28 @@
-
 BACK END:
 FLASK framework: K Team (Katrina K and Kate M)
 
                                                                         (WAVE 1)
-- Create database       (TEAMWORK K&M)
+- Create database 
 
-- Creating models
+- Create models
     Board Model
         Attributes: 
             board_id (int) The unique board id number
             title (string)
             owner (string)
-            ** ??? cards (list) The list of cards on that board ?? **
+            cards (list) The list of cards on that board
 
     Card Model
         Attributes:
             card_id (int) The unique card id number
             message (string)
             likes_count (int)
-            board_id (int) foreign key to board_id in board
+            board_id (int) Foreign key to board_id in board
 
-- Creating a one-to-many relationship between two models
-
-
+- Create a one-to-many relationship between two models
 
                                                                         (WAVE 2)
-- Creating conventional RESTful CRUD routes for a model
+- Create conventional RESTful CRUD routes for the models
     - GET /boards
     - POST /boards
     - PUT /boards/<board_id>
@@ -34,7 +31,8 @@ FLASK framework: K Team (Katrina K and Kate M)
 
     - POST /boards/<board_id>/cards
     - DELETE /boards/<board_id>/cards/<card_id>
-    - PUT boards/<board_id>/cards/<card_id>
+    - PATCH /boards/<board_id>/cards/<card_id>/like
+    - PATCH /boards/<board_id>/cards/<card_id>/edit
 
     Backend User Stories:
     -  User can create a new board with a name (POST)
@@ -45,16 +43,7 @@ FLASK framework: K Team (Katrina K and Kate M)
   
     -  User can add a card to a board (POST)
     -  User can delete a card (DELETE)
-    -  User can update (like/message/etc) a card (PUT)
-
-
-
-- Create unconventional routes for custom behavior
-
-- Apply knowledge about environment variables
-
-
-
+    -  User can update (like/message/etc) a card (PATCH)
 
 FRONT END:
 REACT JS library: A Team (Andre P and Allison L) 
