@@ -26,13 +26,26 @@ FLASK framework: K Team (Katrina K and Kate M)
 
                                                                         (WAVE 2)
 - Creating conventional RESTful CRUD routes for a model
-    GET /boards
-    POST /boards
-    GET /boards/<board_id>/cards
-    POST /boards/<board_id>/cards
-    DELETE /cards/<card_id>
-    DELETE /boards/<board_id>
-    PUT /cards/<card_id>/like
+    - GET /boards
+    - POST /boards
+    - PUT /boards/<board_id>
+    - GET /boards/<board_id>
+    - DELETE /boards/<board_id>
+
+    - POST /boards/<board_id>/cards
+    - DELETE /boards/<board_id>/cards/<card_id>
+    - PUT boards/<board_id>/cards/<card_id>
+
+    Backend User Stories:
+    -  User can create a new board with a name (POST)
+    -  User can view single board and it's contents (GET)
+    -  User can rename a single board (PUT)
+    -  User can see all the current boards (GET)
+    -  User can delete board (DELETE)
+  
+    -  User can add a card to a board (POST)
+    -  User can delete a card (DELETE)
+    -  User can update (like/message/etc) a card (PUT)
 
 
 
